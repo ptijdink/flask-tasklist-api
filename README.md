@@ -9,7 +9,7 @@ The "Flask Tasklist API" is a RESTful API developed with Flask for managing task
 - [x] Implement a basic Flask application running on a local development server.
 
 ### Phase 2: Task List API Design
-- [ ] Define the data models for tasks.
+- [x] Define the data models for tasks.
 - [ ] Design the endpoints for retrieving, adding, updating, and deleting tasks.
 - [ ] Implement the endpoints for basic operations without functionality.
 - [ ] Document the API endpoints and their expected payloads.

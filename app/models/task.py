@@ -4,14 +4,15 @@ from datetime import datetime
 class Task:
     _id_counter = 1
 
-    def __init__(self, name: str, description: str, status: str, deadline: Optional[datetime] = None) -> None:
+    def __init__(self, name: str, description: str, status: Optional[str] = "pending",
+        deadline: Optional[datetime] = None) -> None:
         """
         Initialize a new Task object.
 
         Args:
             name (str): The name of the task.
             description (str): The description of the task.
-            status (str): The status of the task (e.g., 'pending', 'in progress', 'completed').
+            status (Optional[str]): The status of the task. Defaults to "pending"
             deadline (Optional[datetime]): The deadline for the task (optional).
 
         Returns:
