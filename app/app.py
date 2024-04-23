@@ -6,6 +6,12 @@ db = SQLAlchemy()
 
 
 def create_app():
+    """
+    Creates and configures the Flask application.
+
+    Returns:
+        Flask: The configured Flask application.
+    """
     app = Flask(__name__, template_folder='templates')
     app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///./testdb.db'
     

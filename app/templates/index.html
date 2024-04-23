@@ -8,14 +8,13 @@
     <input type="text" name="name" placeholder="Name" required="required"></br>
     <input type="text" name="description" placeholder="Description" required="required"></br>
     <input type="text" name="status" placeholder="Status" required="required"></br>
-    <!-- <input type="date" name="deadline" placeholder="Deadline"></br> -->
     <input type="submit" value="Create">
 </form>
 
 <ul>
-    {% for task in tasks %}
-        <li>{{ task }}</li>
-    {% endfor %}
+{% for task in tasks %}
+    <li>{{ task }}</li>
+{% endfor %}
 </ul>
 
 {% endblock %}
